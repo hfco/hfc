@@ -8,7 +8,7 @@ for high availability, and a requirement for high assurance, there have been an 
 low number of actual bugs reported (around 500), most of them very simple.  That is, about 1.25 bugs per thousand lines of code.
 If written in a conventional imperative language, such as C++ or Java, not only would the code be larger (by about a factor of 2 to 5),
 it would also likely have many more bugs (about 18 per thousand lines of code for typical production quality code, produced by good industrial
-developers, or a total about 15,000-35,000 bugs).
+developers, or a total of about 15,000-35,000 bugs).
 
 There are several reasons for this, notably:
 
@@ -16,7 +16,7 @@ There are several reasons for this, notably:
 - The developer team is highly professional and motivated to produce high quality software even if this takes more time
 - We are following a formal methods process that is geared to our engineering needs
 - We can use excellent property-based testing techniques to catch problems early in the development cycle
-- Haskell is a production-ready language
+- Haskell is a mature and production-ready language - it is now over 30 years old and much work has been done to make it useful in practice
 
 ### Haskell is Production Ready
 
@@ -41,6 +41,8 @@ The key issues were to:
 - provide good supporting tools and environments
 
 ## Why Haskell?
+
+There are many reasons why Haskell is a good choice of programming language.  These include:
 
 1. Haskell lets me write software the way I think.   As a purely functional language, it lets me compose programs from small, easily understood
 building blocks that are highly malleable and easily refactored.  It is *compositional*.
@@ -77,10 +79,14 @@ by functors in other languages.
 
 1. Quickcheck for property testing is a great way to find bugs in Haskell code.
 
+  1. Scala is a gateway drug.  Scala programmers generally love Haskell.  Scala provides a way to move from imperative to functional programming.  Thank you, Martin :)
+
 1. The IOG NoThunks library makes it easier to write code that has easily understood performance properties.
 
 
 ## Why not Haskell?
+
+No language is perfect.  The main issues with using Haskell are:
 
 - Non-strictness can make it hard to debug performance issues.
 
@@ -100,3 +106,9 @@ by functors in other languages.
 It may be necessary to develop new libraries even for fairly common things.
 
 - It can be necessary to use compiler-specific language extensions to achieve specific effects.
+
+- Since Haskell is the main language that is used for programming language research, many new and abstruse ideas are expressed in Haskell, and are implemented as language extensions.
+
+- Most developers are still taught conventional imperative development techniques (genuine object orientation is much less widely used, despite the hype), so the notation can be
+  unfamiliar.
+  
