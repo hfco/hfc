@@ -1,12 +1,15 @@
-# HFC site
+# About HFC
 
-HFC is **the** Hard Fork Company.   Its DNA is firmly embedded in high assurance blockchain through the use of
+HFC is **the** Hard Fork Company.   It is the driving force behind the highly successful Cardano blockchain.
+Its DNA is firmly embedded in advanced high assurance blockchain technologies through the use of
 
 - Formal Methods
 - Pure Functional Programming
 - Research-driven Software Development
 - Advanced Performance Prediction and Monitoring
 - Novel Networking Technologies
+
+as applied to the novel proof-of-stake Cardano blockchain.
 
 Put simply, we offer a one-stop-shop for all things that are core Cardano: consensus and ledger changes, peer-to-peer and other networking infrastructure,
 new CLI commands, code integration and testing, design and implementation, code review, prototyping and design evaluation, formal specification and design,
