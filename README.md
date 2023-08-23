@@ -2,7 +2,14 @@
 
 ## The Cardano Node
 
-The Cardano node is the largest open source project ever built using Haskell. It is a substantial code base, comprising almost 400,000 lines of code
+The Cardano node is the largest open source project ever built using Haskell. It is a substantial code base, comprising almost 400,000 lines of code.
+Despite being an extremely large and complex code base, with tight real time, networking and memory requirements, a requirement
+for high availability, and a requirement for high assurance, there have been an impressively
+low number of actual bugs reported (around 500), most of them very simple.  That is, about 1.25 bugs per thousand lines of code.
+If written in a conventional imperative language, such as C++ or Java, not only would the code be larger (by about a factor of 2 to 5),
+it would also likely have many more bugs (about 18 per thousand lines of code for typical production quality code, produced by good industrial
+developers, or a total about 15,000-35,000 bugs).
+This is down to the 
 
 ### Haskell is Production Ready
 
@@ -10,8 +17,8 @@ In the early days of Haskell development, around 1990, we would often discuss ho
 out how to be a success in the (mostly academic) functional programming community of the time
 
 - don't compromise on core principles - non-strictness, strong typing, purity, type inference
-- provide a rich, powerful and compact syntax
-- 
+- provide a rich, powerful, compact but familiar syntax
+- make it easy to experiment with new features
 
 Making Haskell production ready was more of a challenge, but one that Kevin Hammond took on with Simon Peyton Jones and others.
 Key issues were to:
@@ -24,6 +31,7 @@ Key issues were to:
 - provide syntactic choices that would allow developers to pick the right way to express their coding problems
 - standardise on a core set of features so that the language was stable
 - produce an optimising compiler
+- provide good supporting tools and environments
 
 ## Why Haskell?
 
