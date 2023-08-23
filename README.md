@@ -1,5 +1,21 @@
 # HFC site
 
+HFC is **the** Hard Fork Company.   Its DNA is firmly embedded in high assurance blockchain through the use of
+
+- Formal Methods
+- Pure Functional Programming
+- Research-driven Software Development
+- Advanced Performance Prediction and Monitoring
+- Novel Networking Technologies
+
+Put simply, we offer a one-stop-shop for all things that are core Cardano: consensus and ledger changes, peer-to-peer and other networking infrastructure,
+new CLI commands, code integration and testing, design and implementation, code review, prototyping and design evaluation, formal specification and design,
+performance analysis, security analysis, and unparalleled knowledge of the Cardano ecosystem, Cardano core technologies and the Cardano design and deployment.
+
+## Mission Statement
+
+*Include agreed mission statement here*
+
 ## The Cardano Node
 
 The Cardano node is the largest open source project ever built using Haskell. It is a substantial code base, comprising almost 400,000 lines of code.
