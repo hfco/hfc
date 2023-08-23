@@ -19,7 +19,7 @@ We get things done, we get them done properly, we get them done efficiently.
 
 ## Mission Statement
 
-*Include agreed mission statement here*
+**To Develop, Maintain and Enhance the Cardano Blockchain, using advanced formal methods based on peer-reviewed research.**
 
 ## The Cardano Node
 
