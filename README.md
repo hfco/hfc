@@ -15,6 +15,8 @@ Put simply, we offer a one-stop-shop for all things that are core Cardano: conse
 new CLI commands, code integration and testing, design and implementation, code review, prototyping and design evaluation, formal specification and design,
 performance analysis, security analysis, and unparalleled knowledge of the Cardano ecosystem, Cardano core technologies and the Cardano design and deployment.
 
+We get things done, we get them done properly, we get them done efficiently.
+
 ## Mission Statement
 
 *Include agreed mission statement here*
