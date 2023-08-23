@@ -1,5 +1,30 @@
 # HFC site
 
+## The Cardano Node
+
+The Cardano node is the largest open source project ever built using Haskell. It is a substantial code base, comprising almost 400,000 lines of code
+
+### Haskell is Production Ready
+
+In the early days of Haskell development, around 1990, we would often discuss how to make Haskell a success. It was relatively easy to work
+out how to be a success in the (mostly academic) functional programming community of the time
+
+- don't compromise on core principles - non-strictness, strong typing, purity, type inference
+- provide a rich, powerful and compact syntax
+- 
+
+Making Haskell production ready was more of a challenge, but one that Kevin Hammond took on with Simon Peyton Jones and others.
+Key issues were to:
+
+- make sure that the module system was flexible and powerful enough for commercial use, but which was simple enough to be easily understood
+- ensure that the I/O system could be easily extended by users as well as by language designers/implementors
+- provide a flexible set of effects: exceptions etc
+- develop a set of libraries that could be used for real development: Posix etc.
+- be conservative in the design
+- provide syntactic choices that would allow developers to pick the right way to express their coding problems
+- standardise on a core set of features so that the language was stable
+- produce an optimising compiler
+
 ## Why Haskell?
 
 Haskell lets me write software the way I think.   As a purely functional language, it lets me compose programs from small, easily understood
