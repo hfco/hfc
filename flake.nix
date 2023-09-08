@@ -24,7 +24,7 @@
 
         # Default shell.
         devShells.default = pkgs.mkShell {
-          name = "sanchonet";
+          name = "hfc";
           inputsFrom = [
             config.treefmt.build.devShell
           ];

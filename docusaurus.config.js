@@ -1,131 +1,101 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const path = require("path")
-
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Hard Fork Company',
-  tagline: 'Enabling Development of Cardano for years to come',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://hardfork.company',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'hfco', // Usually your GitHub org/user name.
-  projectName: 'hfc', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/hfco/hfc/tree/master/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+module.exports = {
+    title: 'Hard Fork Company',
+    tagline: 'Innovating Cardano',
+    url: 'https://hardfork.company',
+    baseUrl: '/',
+    favicon: 'img/favicon.png',
+    organizationName: 'hfco', // Usually your GitHub org/user name.
+    projectName: 'hfc', // Usually your repo name.
+    stylesheets: [
+        'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap',
     ],
-  ],
-
-  plugins: [require.resolve(path.join(__dirname, '/plugins/symlink-resolver'))],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Hard Fork Company',
-        logo: {
-          alt: 'Hard Fork Company Logo',
-          src: 'img/logo.svg',
+    themeConfig: {
+        //algolia: {
+        //  apiKey: '',
+        //  indexName: '',
+        //  appId: '',
+        //  algoliaOptions: {}, // Optional, if provided by Algolia
+        //},
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: false,
+            respectPrefersColorScheme: false,
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Content',
-          },
-          {
-            to: 'about',
-            position: 'left',
-            label: 'About',
-          },
-          {
-            href: 'https://github.com/hfco/hfc',
-            label: 'GitHub',
-            position: 'right',
-          },
-      ],
+        navbar: {
+            title: 'Hard Fork Company',
+            logo: {
+                alt: 'HardFork Logo',
+                src: 'img/logo.png',
+                href: '/',
+            },
+            items: [
+                { to: 'about', label: 'About Us', position: 'left' },
+                { to: 'docs/documentation', label: 'Team', position: 'left' },
+                { to: 'docs/documentation', label: 'Documentation', position: 'left' },
+                { to: 'blog', label: 'Articles', position: 'left' },
+                { to: 'blog', label: 'Team Updates', position: 'left' },
+                { to: 'blog', label: 'Quarterly Plans', position: 'left'},
+                {
+                    href: 'https://hardfork.company',
+                    label: 'hardfork.company',
+                    position: 'right',
+                    css: 'navbar__brand',
+                },
+            ],
+        },
+        footer: {
+            style: 'dark',
+            links: [{
+                    title: 'Left',
+                    items: [
+                        {
+                            label: 'Something',
+                            to: 'docs/documentation',
+                        },
+                    ],
+                },
+                {
+                    title: 'Middle',
+                    items: [
+                        {
+                            label: 'Something',
+                            to: 'docs/documentation',
+                        }
+                    ],
+                },
+                {
+                    title: 'Social',
+                    items: [{
+                            label: 'Blog',
+                            to: '/blog',
+                        },
+                        {
+                            label: 'GitHub',
+                            href: 'https://github.com/hfco',
+                        },
+                        {
+                            label: 'Twitter',
+                            href: 'https://twitter.com/hfcompany',
+                        },
+                    ],
+                },
+            ],
+            copyright: `Copyright © ${new Date().getFullYear()} Hard Fork Company. Built with Docusaurus`,
+        },
     },
-    footer: {
-      style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Get Started',
-                to: '/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/hfcompany',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/hfco/hfc',
-              },
-            ],
-          },
+    plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+    presets: [
+        [
+            '@docusaurus/preset-classic',
+            {
+                docs: {
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    editUrl: 'https://github.com/hfco/docs/tree/master',
+                },
+                theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                },
+            },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HFC`,
-      },
-      prism: {
-        defaultLanguage: 'nix',
-        additionalLanguages: ['haskell', 'nix', 'rust'],
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+    ],
 };
-
-module.exports = config;

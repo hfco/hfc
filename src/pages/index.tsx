@@ -12,15 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/intro">
-            Get Started
-          </Link>
-        </div>
+        <img className={styles.featureImage} src='/img/hfc-logo.png' alt="hfc-logo" />
       </div>
     </header>
   );
@@ -30,7 +22,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      description="How to use Nix flakes and flake-parts for project development.">
+      description="Hard Fork Company">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

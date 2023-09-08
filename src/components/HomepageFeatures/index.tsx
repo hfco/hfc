@@ -10,29 +10,38 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Why Cardano?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Services We Offer',
+    Svg: require('@site/static/img/folder-plus.svg').default,
     description: (
       <>
-        Cardano is awesome
+        We provide value to the community through development
+        of Cardano, empowering the community to build on top
+        of Cardano.
       </>
     ),
   },
   {
-    title: 'Why Haskell?',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Join our Team',
+    Svg: require('@site/static/img/code.svg').default,
     description: (
       <>
-        Haskell is awesome
+        We have a strong team of haskell developers with over 5
+        years of development experience building Cardano. Our team
+        work closely with IOG research to bring the latest and greatest
+        research ideas to fruition. We're always looking for new people
+        to join.
+
       </>
     ),
   },
   {
-    title: 'Why a new network protocol?',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Founding Member of Intersect',
+    Svg: require('@site/static/img/droplet.svg').default,
     description: (
       <>
-        Mini protocols are awesome
+        We're a founding member of Cardano's members based organization
+        Intersect. Learn more about what we do for Intersect or become
+        a member yourself.
       </>
     ),
   },
