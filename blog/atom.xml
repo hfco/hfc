@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://hardfork.company/blog</id>
+    <title>Hard Fork Company Blog</title>
+    <updated>2023-09-08T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://hardfork.company/blog"/>
+    <subtitle>Hard Fork Company Blog</subtitle>
+    <icon>https://hardfork.company/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[HFC is live!]]></title>
+        <id>https://hardfork.company/blog/welcome</id>
+        <link href="https://hardfork.company/blog/welcome"/>
+        <updated>2023-09-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the future home of HFC!]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the future home of HFC!</p>]]></content>
+        <author>
+            <name>Samuel Leathers</name>
+            <uri>https://www.twitter.com/therealdisasm</uri>
+        </author>
+        <category label="hello" term="hello"/>
+    </entry>
+</feed>
