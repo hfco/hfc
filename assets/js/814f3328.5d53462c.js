@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhfc_website=self.webpackChunkhfc_website||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"HFC is live!","permalink":"/blog/welcome"}]}')}}]);
