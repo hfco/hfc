@@ -2,16 +2,24 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+import ServicesImage from "@site/static/img/join-team.jpeg";
+import JoinTeamImage from "@site/static/img/join-team.jpeg";
+import FoundingImage from "@site/static/img/join-team.jpeg";
+
+import { Cta } from "../Cta";
+
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  img: string | ComponentType<any>;
   description: JSX.Element;
+  href?: string;
+  cta?: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: 'Services We Offer',
-    Svg: require('@site/static/img/folder-plus.svg').default,
+    img: ServicesImage,
     description: (
       <>
         We provide value to the community through development
@@ -22,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Join our Team',
-    Svg: require('@site/static/img/code.svg').default,
+    img: JoinTeamImage,
     description: (
       <>
         We have a strong team of haskell developers with over 5
@@ -33,10 +41,12 @@ const FeatureList: FeatureItem[] = [
 
       </>
     ),
+    href: "team",
+    cta: "Learn More"
   },
   {
     title: 'Founding Member of Intersect',
-    Svg: require('@site/static/img/droplet.svg').default,
+    img: FoundingImage,
     description: (
       <>
         We're a founding member of Cardano's members based organization
@@ -47,15 +57,30 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({
+  title,
+  img: Image,
+  description,
+  href,
+  cta
+}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {typeof Image === "string" ? (
+          <img src={Image} />
+        ) : (
+          <Image />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+        {href && cta ? (
+          <Cta appearance="secondary" href={href}>
+            {cta}
+          </Cta>
+        ) : null}
       </div>
     </div>
   );

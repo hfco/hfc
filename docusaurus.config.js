@@ -25,12 +25,12 @@ module.exports = {
             title: 'Hard Fork Company',
             logo: {
                 alt: 'HardFork Logo',
-                src: 'img/logo.png',
+                src: 'img/menu-logo.png',
                 href: '/',
             },
             items: [
                 { to: 'about', label: 'About Us', position: 'left' },
-                { to: 'docs/documentation', label: 'Team', position: 'left' },
+                { to: 'team', label: 'Team', position: 'left' },
                 { to: 'docs/documentation', label: 'Documentation', position: 'left' },
                 { to: 'blog', label: 'Articles', position: 'left' },
                 { to: 'blog', label: 'Team Updates', position: 'left' },
