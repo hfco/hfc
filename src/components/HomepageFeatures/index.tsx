@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-import ServicesImage from "@site/static/img/join-team.jpeg";
+import ServicesImage from "@site/static/img/services.jpeg";
 import JoinTeamImage from "@site/static/img/join-team.jpeg";
-import FoundingImage from "@site/static/img/join-team.jpeg";
+import IntersectImage from "@site/static/img/intersect.jpeg";
 
 import { Cta } from "../Cta";
 
@@ -27,6 +27,8 @@ const FeatureList: FeatureItem[] = [
         of Cardano.
       </>
     ),
+    href: "docs/cardano",
+    cta: "Learn More"
   },
   {
     title: 'Join our Team',
@@ -46,7 +48,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Founding Member of Intersect',
-    img: FoundingImage,
+    img: IntersectImage,
     description: (
       <>
         We're a founding member of Cardano's members based organization
@@ -54,6 +56,8 @@ const FeatureList: FeatureItem[] = [
         a member yourself.
       </>
     ),
+    href: "https://www.intersectmbo.org/join",
+    cta: "Join Now"
   },
 ];
 
