@@ -31,7 +31,7 @@ module.exports = {
             items: [
                 { to: 'about', label: 'About Us', position: 'left' },
                 { to: 'team', label: 'Team', position: 'left' },
-                { to: 'docs/documentation', label: 'Documentation', position: 'left' },
+                { to: 'docs/documentation', label: 'About Cardano', position: 'left' },
                 { to: 'blog', label: 'Articles', position: 'left' },
                 { to: 'blog', label: 'Team Updates', position: 'left' },
                 { to: 'blog', label: 'Quarterly Plans', position: 'left'},
