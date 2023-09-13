@@ -46,22 +46,33 @@ module.exports = {
         footer: {
             style: 'dark',
             links: [{
-                    title: 'Left',
+                    title: 'About HFC',
                     items: [
                         {
-                            label: 'Something',
-                            to: 'docs/documentation',
+                            label: 'The HFC Team',
+                            to: 'team',
+                        },
+                        {
+                            label: 'Contact us',
+                            to: 'contact',
                         },
                     ],
                 },
                 {
-                    title: 'Middle',
+                    title: 'Technology',
                     items: [
                         {
-                            label: 'Something',
-                            to: 'docs/documentation',
-                        }
-                    ],
+                            label: 'Cardano',
+                            to: 'docs/cardano',
+                        },
+                        {
+                            label: 'Haskell',
+                            to: 'docs/why-haskell',
+                        },
+                        {
+                            label: 'Agda',
+                            to: 'docs/why-haskell',
+                        }                    ],
                 },
                 {
                     title: 'Social',
