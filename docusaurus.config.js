@@ -33,7 +33,7 @@ module.exports = {
                 { to: 'team', label: 'The HFC Team', position: 'left' },
                 { to: 'docs/documentation', label: 'About Cardano', position: 'left' },
                 { to: 'blog', label: 'Articles and Resources', position: 'left' },
-                { to: 'blog', label: 'HFC Updates', position: 'left' },
+                { to: 'blog', label: 'HFC News', position: 'left' },
                 { href: 'https://input-output-hk.github.io/cardano-updates/', label: 'Development Updates', position: 'left'},
                 { href: 'https://input-output-hk.github.io/cardano-updates/quarterly', label: 'Quarterly Plans', position: 'left'},
                 {
