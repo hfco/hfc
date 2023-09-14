@@ -72,7 +72,7 @@ module.exports = {
                         },
                         {
                             label: 'Agda',
-                            to: 'docs/why-haskell',
+                            to: 'docs/why-agda',
                         },
                       {
                             label: 'Formal Methods',
