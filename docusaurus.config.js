@@ -76,7 +76,7 @@ module.exports = {
                         },
                       {
                             label: 'Formal Methods',
-                            to: 'docs/why-haskell',
+                            to: 'docs/formal-methods',
                         },
                    ],
                  },
