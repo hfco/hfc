@@ -29,12 +29,13 @@ module.exports = {
                 href: '/',
             },
             items: [
-                { to: 'about', label: 'About Us', position: 'left' },
-                { to: 'team', label: 'Team', position: 'left' },
+                { to: 'about', label: 'About HFC', position: 'left' },
+                { to: 'team', label: 'The HFC Team', position: 'left' },
                 { to: 'docs/documentation', label: 'About Cardano', position: 'left' },
                 { to: 'blog', label: 'Articles', position: 'left' },
-                { to: 'blog', label: 'Team Updates', position: 'left' },
-                { to: 'blog', label: 'Quarterly Plans', position: 'left'},
+                { to: 'blog', label: 'HFC Updates', position: 'left' },
+                { href: 'https://input-output-hk.github.io/cardano-updates/', label: 'Development Updates', position: 'left'},
+                { href: 'https://input-output-hk.github.io/cardano-updates/quarterly', label: 'Quarterly Plans', position: 'left'},
                 {
                     href: 'https://hardfork.company',
                     label: 'hardfork.company',
@@ -59,7 +60,7 @@ module.exports = {
                     ],
                 },
                 {
-                    title: 'Technology',
+                    title: 'About Our Technologies',
                     items: [
                         {
                             label: 'Cardano',
@@ -73,7 +74,11 @@ module.exports = {
                             label: 'Agda',
                             to: 'docs/why-haskell',
                         }                    ],
-                },
+                      {
+                            label: 'Formal Methods',
+                            to: 'docs/why-haskell',
+                        }                    ],
+                 },
                 {
                     title: 'Social',
                     items: [{
