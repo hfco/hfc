@@ -6,3 +6,22 @@ slug: /evidence-Based
 ---
 
 # Evidence-Based Development
+
+We follow evidence-based development.  Designs are evaluated for performance feasibility using the Delta-Q Systems Design
+methodology that has been developed by PNSol and advanced in conjunction with members of the HFC team.   This methodology
+targets complex distributed systems (such as the Cardano blockchain) and allows rapid assessment of design feasibility
+as well as providing guardrails for design refinement.  Where a design is possibly feasible, these guardrails indicate
+how and where the design needs to be refined.
+
+The methodology is backed by careful performance evaluation prior to every mainnet release.  System level benchmarks
+are conducted on a large, consistent cluster of Cardano nodes prior to tagging a node release.  Over 40 performance 
+metrics are considered and compared against a baseline.  These include time and memory usage.  Any significant regression
+is investigated, and any regression that invalidates the design requirements will prevent release. In addition, micro-benchmarks
+are used for early detection of performance issues as part of the Continuous Integration system.
+This detects many issues early in the development cycle. In this way, the Cardano node maintains its high performance and
+demonstrably meets its design objectives.
+
+Software functionality is evaluated rigorously using property testing as well as more conventional unit testing and end-to-end testing.
+Property testing automatically generates thousands of tests for each property that has been specified, narrowing failing
+tests to give a simple counter-example that can be used to diagnose a problem.  Collectively, this gives a level of testing
+that allows a high level of confidence in the correct operation of the Cardano node.
