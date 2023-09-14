@@ -73,11 +73,12 @@ module.exports = {
                         {
                             label: 'Agda',
                             to: 'docs/why-haskell',
-                        }                    ],
+                        },
                       {
                             label: 'Formal Methods',
                             to: 'docs/why-haskell',
-                        }                    ],
+                        },
+                   ],
                  },
                 {
                     title: 'Social',
